@@ -13,3 +13,17 @@ Figlet의 모든 폰트를 눈으로 확인해보기 위한 쉘 스크립트입�
 ./figletFontPrinter.sh HelloWorld output.txt
 ./figletFontPrinter.sh HelloWorld output.txt "-l"
 ```
+
+## 주의
+OS마다 Figlet의 default font path가 다르므로 수정이 필요할 수 있습니다.
+
+```shell
+vi figletFontPrinter.sh
+```
+
+```sh
+#!/bin/bash
+
+FONT_PATH="이 곳에 자신의 OS에 해당하는 figlet의 default font path 입력"
+...
+```
